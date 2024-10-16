@@ -1,0 +1,13 @@
+project:
+  name: DiscCoverView
+jdk:
+  - openjdk17
+
+build:
+  gradle: 8.4
+  dependencies:
+    - android-tools-build: "8.3.0"
+
+notifications:
+  on_success: always
+  on_failure: always
