@@ -299,7 +299,7 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
 
     private void setScaleType() {
         if (SHAPE_CIRCLE == mShape) {
-            setScaleType(ScaleType.CENTER_INSIDE);
+            setScaleType(ScaleType.FIT_XY);
         } else {
             setScaleType(ScaleType.CENTER_CROP);
         }
