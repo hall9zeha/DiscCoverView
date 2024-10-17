@@ -177,7 +177,7 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
         });
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.DiscCoverView);
-        @Shape int shape = a.getInt(R.styleable.DiscCoverView_shape, SHAPE_RECTANGLE);
+        @Shape int shape = a.getInt(R.styleable.DiscCoverView_shape, SHAPE_CIRCLE);
         @ColorInt int trackColor = a.getColor(R.styleable.DiscCoverView_trackColor, TRACK_COLOR);
         int durationRotate = a.getInt(R.styleable.DiscCoverView_speedRotation, DURATION);
         a.recycle();
@@ -393,12 +393,17 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
             mStartRotateAnimator.start();
         }
     }
-
+    /**
+     * Pause the rotate animation
+     */
     public void pause(){
         if (mStartRotateAnimator.isRunning()) {
             mStartRotateAnimator.pause();
         }
     }
+    /**
+     * Resume the rotate animation
+     */
     public void  resume(){
         if (mStartRotateAnimator.isPaused()) {
             mStartRotateAnimator.resume();
@@ -416,6 +421,9 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
             mStartRotateAnimator.cancel();
         }
     }
+    /**
+     * End the rotate animation
+     */
     public void end(){
         if(mStartRotateAnimator.isRunning()){
             //If is rotation the animation stop with rotation to original position fastly
