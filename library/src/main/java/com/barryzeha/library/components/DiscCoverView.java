@@ -113,7 +113,7 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
             @Override
             public void onAnimationEnd(Animator animation) {
                 float current = getRotation();
-                float target = current > HALF_ANGLE ? FULL_ANGLE : 0; // Choose the shortest distance to 0 rotation
+                float target = current > HALF_ANGLE ? FULL_ANGLE : 0;
                 float diff = target > 0 ? FULL_ANGLE - current : current;
                 mEndRotateAnimator.setFloatValues(current, target);
                 mEndRotateAnimator.setDuration((int) (DURATION_PER_DEGREES * diff));
@@ -350,7 +350,6 @@ public class DiscCoverView extends androidx.appcompat.widget.AppCompatImageView 
 
     @Override
     public WindowInsets onApplyWindowInsets(WindowInsets insets) {
-        // Don't need to consume the system window insets
         return insets;
     }
 

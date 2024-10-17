@@ -3,6 +3,7 @@ package com.barryzeha.disccoverview
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -59,6 +60,17 @@ class MainActivity : AppCompatActivity() {
             animState=0
             btnStart.text = "Start"
         }
+        // Callback
+        ivCoverView.setCallbacks(object: DiscCoverView.Callbacks{
+            override fun onMorphEnd(coverView: DiscCoverView?) {
+
+            }
+
+            override fun onRotateEnd(coverView: DiscCoverView?) {
+                Toast.makeText(this@MainActivity, "rotate end", Toast.LENGTH_SHORT).show()
+            }
+
+        })
 
     }
 }
