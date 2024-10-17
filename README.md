@@ -6,6 +6,13 @@ A simple custom view to display song covers on Android
 <a href="https://jitpack.io/#hall9zeha/DiscCoverView"><img alt="License" src="https://jitpack.io/v/hall9zeha/DiscCoverView.svg"/></a>
 </p>
 
+# Screenshots
+|||
+|--|--|
+|<p align="center" width="70%"><img src="https://github.com/hall9zeha/DiscCoverView/blob/main/screenshots/screen1.jpg" width=50% height=50% /></p>|<p align="center" width="70%"><img src="https://github.com/hall9zeha/DiscCoverView/blob/main/screenshots/screen2.jpg" width=50% height=50% /></p>|
+||
+|--|
+|<p align="center" width="70%"><img src="https://github.com/hall9zeha/DiscCoverView/blob/main/screenshots/example.gif" width=50% height=50% /></p>|
 ## Requirements
 * Android min SDK 23
 
