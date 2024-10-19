@@ -22,7 +22,9 @@ A simple custom view to display song covers on Android
 ### 1. Add the jitpack source in settings.gradle:
 
 * In gradle 7 or latest
-```gradle groovy
+
+gradle groovy
+```
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -33,36 +35,18 @@ dependencyResolutionManagement {
     }
 }
 ```
-
-* In earlier versions of gradle 7, gradle project level
-* gradle groovy
+gradle kotlin
 ```gradle
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        //here
-        maven { url "https://jitpack.io" }
-
-    }
-}
-```
-
-* In gradle kotlin
-```gradle
-allprojects {
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
         //here
         maven ( url = "https://jitpack.io" )
-
     }
 }
-
 ```
-
-
 ### 2. Add the dependency at application gradle level.
 * gradle groovy
 ```gradle
