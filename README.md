@@ -24,7 +24,7 @@ A simple custom view to display song covers on Android
 * In gradle 7 or latest
 
 gradle groovy
-```
+```gradle
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
