@@ -14,7 +14,7 @@ A simple custom view to display song covers on Android
 |--|
 |<p align="center" width="70%"><img src="https://github.com/hall9zeha/DiscCoverView/blob/main/screenshots/example.gif" width=70% /></p>|
 ## Requirements
-* Android min SDK 24
+* Android min SDK 21
 
 ## Implementation
 
